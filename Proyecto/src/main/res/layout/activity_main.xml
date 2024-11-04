@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_principal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.005"
+        android:background="@color/background_azul_claro"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:weightSum="1.1"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <LinearLayout
+            android:id="@+id/layout_vertical_idioma"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_weight="0.005"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/layout_horizontal_idioma"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/button_idioma"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.005"
+                    android:backgroundTint="@color/black"
+                    android:text="@string/idioma_español" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_vertical_bienvenida"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:orientation="vertical"
+            android:weightSum="0.33">
+
+            <LinearLayout
+                android:id="@+id/layout_horizontal_bienvenida"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_view_bienvenida"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/welcome_message"
+                    android:textColor="@color/azul_oscuro"
+                    android:textSize="60sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_vertical_credenciales"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.33"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="0.33">
+
+            <!-- Layout horizontal para Usuario -->
+            <LinearLayout
+                android:id="@+id/layout_horizontal_usuario"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dp"
+                android:layout_weight="0.15"
+                android:orientation="horizontal">
+
+                <!-- TextView para Nombre de Usuario -->
+                <TextView
+                    android:id="@+id/text_view_usuario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/username_label"
+                    android:textSize="16sp" />
+
+                <!-- EditText para ingresar el Nombre de Usuario -->
+                <EditText
+                    android:id="@+id/edit_text_usuario"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/username_hint" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_vertical_contraseña"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.15"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <!-- Layout horizontal para Contraseña -->
+                <LinearLayout
+                    android:id="@+id/layout_horizontal_contraseña"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:orientation="horizontal">
+
+                    <!-- TextView para Contraseña -->
+                    <TextView
+                        android:id="@+id/text_view_contraseña"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:text="@string/password_label"
+                        android:textSize="16sp" />
+
+                    <!-- EditText para ingresar la Contraseña -->
+                    <EditText
+                        android:id="@+id/edit_text_contraseña"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/password_hint"
+                        android:inputType="textPassword" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_vertical_inicio"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.33"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="0.33">
+
+            <!-- TextView para "Si no dispone de cuenta, pulse aquí" -->
+
+            <!-- Botón para Iniciar Sesión -->
+            <LinearLayout
+                android:id="@+id/layout_horizontal_sin_cuenta"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.20"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_view_sin_cuenta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/no_account_text"
+                    android:textColor="@android:color/black"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_horizontal_inicio"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.15"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_inicio_sesion"
+                    android:layout_width="221dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="16dp"
+                    android:text="@string/login_button" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
