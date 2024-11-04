@@ -1,7 +1,7 @@
 Interfaz de la primera pantalla de carga de la aplicación:
     - Nombre de Usuario
     - Contraseña
-    - Texto informativo "Si no tiene una cuentra creada, pulse aquí
+    - Texto informativo "Si no tiene una cuentra creada, pulse aquí"
     - Botón "Iniciar Sesión"
 
 Aún no se implementa la funcionalidad, simplemente la Interfaz.
