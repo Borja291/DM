@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="background_azul_claro">#ADD8E6</color> <!-- Azul claro estándar para el fondo de pantalla-->
+    <color name="azul_oscuro">#00008B</color> <!-- Azul oscuro -->
+    <color name="tu_color">#FF0000</color> <!-- Rojo -->
+</resources>
